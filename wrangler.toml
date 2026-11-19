@@ -1,0 +1,17 @@
+name = "gtrm-api"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+NODE_ENV = "production"
+GOOGLE_REDIRECT_URI = "https://gtrm-api.workers.dev/auth/callback"
+APP_REDIRECT_URL = "/"
+
+# Set your secrets using Wrangler CLI:
+# npx wrangler secret put GOOGLE_CLIENT_ID
+# npx wrangler secret put GOOGLE_CLIENT_SECRET
+# npx wrangler secret put SESSION_SECRET
+# npx wrangler secret put TOKEN_ENCRYPTION_KEY
+# npx wrangler secret put SUPABASE_URL
+# npx wrangler secret put SUPABASE_SERVICE_ROLE_KEY
